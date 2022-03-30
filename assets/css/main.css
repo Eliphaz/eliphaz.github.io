@@ -2917,7 +2917,8 @@ button:disabled,
 
 .main.style2 {
   background-color: #333;
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
+  text-shadow: 2px 2px 2px black;
   background-attachment: fixed, fixed;
   background-image: url("images/overlay1.png"), url("../../images/header.jpg");
   background-size: auto, cover;

@@ -2921,9 +2921,16 @@ button:disabled,
   color: white;
   font-family: TimesNewRoman;
   background-attachment: fixed, fixed;
-  background-image: url("images/overlay1.png"), url("../../images/header.jpg");
-  background-size: auto, cover;
-  background-position: center 85%; /* aligns the bottom of the image with the bottom of the element */
+  background-image: url("../../images/elibg.jpeg");
+  background-size: cover;
+  background-position: center; /* aligns the bottom of the image with the bottom of the element */
+}
+
+.bottom_container {
+  background-attachment: fixed, fixed;
+  background-image: url("../../images/elibg2.jpeg") !important; 
+  background-size: cover;
+  background-position: bottom 90% !important; /* aligns the bottom of the image with the bottom of the element */
 }
 
 .main.style2 a {
@@ -3631,4 +3638,12 @@ body.is-preload #header:after {
   #footer {
     padding: 2em 1em 2em 1em;
   }
+
+  .bottom_container {
+    background-attachment: fixed, fixed;
+    background-image: url("../../images/elibg2.jpeg");
+    background-size: cover;
+    background-position: bottom 10%; /* aligns the bottom of the image with the bottom of the element */
+  }
 }
+

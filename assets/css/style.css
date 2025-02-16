@@ -238,6 +238,62 @@ body {
   .category-checkbox:checked + .category-label {
     background-color: #2ecc71;
   }
+
+  .category-checkbox:checked + .category-label.languages {
+    background-color: #3498db;
+}
+
+.category-checkbox:checked + .category-label.libraries {
+    background-color: #e74c3c;
+}
+
+.category-checkbox:checked + .category-label.cloud-platforms {
+    background-color: #2ecc71;
+}
+
+.category-checkbox:checked + .category-label.web-development {
+    background-color: #f39c12;
+}
+
+.category-checkbox:checked + .category-label.team-tools {
+    background-color: #7e59b6;
+}
+
+.category-checkbox:checked + .category-label.design {
+    background-color: #1abc9c;
+}
+
+.category-checkbox:checked + .category-label.data-tools {
+    background-color: #ad448c;
+}
+
+.category-label.languages {
+    background-color: #3498db;
+}
+
+.category-label.libraries {
+    background-color: #e74c3c;
+}
+
+.category-label.cloud-platforms {
+    background-color: #2ecc71;
+}
+
+.category-label.web-development {
+    background-color: #f39c12;
+}
+
+.category-label.team-tools {
+    background-color: #7e59b6;
+}
+
+.category-label.design {
+    background-color: #1abc9c;
+}
+
+.category-label.data-tools {
+    background-color: #ad448c;
+}
   
   /* Skills Progress Bars */
   .skill-bar {

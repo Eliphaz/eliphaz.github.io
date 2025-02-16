@@ -4,23 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const deselectAllButton = document.getElementById('deselect-all');
 
     checkboxes.forEach(checkbox => {
+        const category = checkbox.value;
+        const label = document.querySelector(`label[for="${checkbox.id}"]`);
+        if (checkbox.checked) {
+            label.classList.add(category);
+        }
+
         checkbox.addEventListener('change', () => {
-            const category = checkbox.value;
-            skillItems.forEach(skill => {
-                if (skill.classList.contains(category)) {
-                    if (checkbox.checked) {
+            if (checkbox.checked) {
+                skillItems.forEach(skill => {
+                    if (skill.classList.contains(category)) {
                         skill.style.display = 'block';
                         setTimeout(() => {
                             skill.classList.remove('hidden');
                         }, 10); // Small delay to ensure display property is set before removing hidden class
-                    } else {
+                    }
+                });
+                label.classList.add(category);
+            } else {
+                skillItems.forEach(skill => {
+                    if (skill.classList.contains(category)) {
                         skill.classList.add('hidden');
                         setTimeout(() => {
                             skill.style.display = 'none';
                         }, 300); // Delay to allow the fade-out effect
                     }
-                }
-            });
+                });
+                label.classList.remove(category);
+            }
         });
     });
 
@@ -28,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         checkboxes.forEach(checkbox => {
             checkbox.checked = false;
             const category = checkbox.value;
+            const label = document.querySelector(`label[for="${checkbox.id}"]`);
             skillItems.forEach(skill => {
                 if (skill.classList.contains(category)) {
                     skill.classList.add('hidden');
@@ -36,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 300); // Delay to allow the fade-out effect
                 }
             });
+            label.classList.remove(category);
         });
     });
 });

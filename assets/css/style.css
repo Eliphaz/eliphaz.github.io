@@ -236,7 +236,7 @@ body {
   }
   
   .category-checkbox:checked + .category-label {
-    background-color: #2ecc71;
+    background-color: #2980b9;
   }
 
   .category-checkbox:checked + .category-label.languages {

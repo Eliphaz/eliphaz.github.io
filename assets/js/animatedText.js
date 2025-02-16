@@ -1,29 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const phrases = [
         "data engineer",
-        "DevOps engineer",
-        "cloud architect",
-        "automation expert",
-        "CI/CD pipeline master",
-        "ETL pipeline architect",
-        "big data specialist",
-        "AWS/Azure cloud ninja",
-        "Python wizard",
         "problem solver",
-        "troubleshooting genius",
+        "cloud architect",
+        "DevOps engineer",
+        "automation expert",
+        "ETL pipeline pro",
+        "big data specialist",
+        "python wizard",
+        "data wrangler",
+        "endurant debugger",
         "technical innovator",
-        "optimization mastermind",
         "continuous learner",
-        "data pipeline perfectionist",
         "debugging virtuoso",
-        "highly adaptable engineer",
+        "adaptable engineer",
         "team player",
-        "mentorship-driven professional",
         "workhorse developer",
-        "automation-obsessed engineer",
-        "hard worker",
-        "relentless problem solver",
-        "24/7 reliability mindset"
+        "hard worker"
     ];
     let currentPhraseIndex = 0;
     let currentCharIndex = 0;

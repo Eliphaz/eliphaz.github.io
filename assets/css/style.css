@@ -59,7 +59,9 @@ header {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 1000px; /* Increase the maximum width */
+    width: 90%; /* Ensure it takes up most of the available space */
+    margin: 0 auto; /* Center the content */
 }
 
 .hero h1 {
@@ -339,6 +341,7 @@ header {
     font-weight: bold;
     color: #3498db;
     transition: opacity 0.5s ease-in-out;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 @keyframes changeText {

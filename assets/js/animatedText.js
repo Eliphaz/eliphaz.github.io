@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "cloud architect",
         "DevOps engineer",
         "automation expert",
-        "ETL pipeline pro",
+        "ETL pipeline professional",
         "big data specialist",
         "python wizard",
         "data wrangler",
         "endurant debugger",
         "technical innovator",
+        "data pipeline professional",
         "continuous learner",
-        "debugging virtuoso",
+        "workhorse developer",
         "adaptable engineer",
         "team player",
-        "workhorse developer",
         "hard worker"
     ];
     let currentPhraseIndex = 0;
